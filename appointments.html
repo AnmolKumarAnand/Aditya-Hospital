@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Appointments | Aditya Hospital</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<script>
+  // ✅ Redirect if not logged in
+  const token = localStorage.getItem("token");
+  if (!token) {
+    alert("Please login first to access this page.");
+    window.location.href = "login.html";
+  }
+</script>
+
+<header class="header bg-blue">
+  <nav class="navbar bg-blue">
+    <div class="container flex">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="site logo">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="book.html" class="nav-link">Book Appointment</a></li>
+        <li class="nav-item"><a href="#doc-panel" class="nav-link">Doctors</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <span id="authLinks"></span>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="text-center py">
+  <h1>My Appointments</h1>
+  <div class="bg-white text-dark container" style="max-width:800px; padding:2rem; border-radius:1rem;">
+    <table style="width:100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background:#1d6ff2; color:#fff;">
+          <th style="padding:10px;">Doctor</th>
+          <th style="padding:10px;">Date</th>
+          <th style="padding:10px;">Time</th>
+          <th style="padding:10px;">Status</th>
+        </tr>
+      </thead>
+      <tbody id="appointmentsTable">
+        <!-- Appointments will be fetched here dynamically -->
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<!-- ✅ Dynamic Navbar Script -->
+<script>
+  function updateNavbar() {
+    const authLinks = document.getElementById("authLinks");
+    const token = localStorage.getItem("token");
+    const name = localStorage.getItem("userName");
+
+    if (token && name) {
+      authLinks.innerHTML = `
+        <li class="nav-item"><span class="nav-link">Hi, ${name}</span></li>
+        <li class="nav-item"><a href="appointments.html" class="nav-link">My Appointments</a></li>
+        <li class="nav-item"><a href="#" id="logoutBtn" class="nav-link">Logout</a></li>
+      `;
+      document.getElementById("logoutBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        localStorage.removeItem("token");
+        localStorage.removeItem("userName");
+        alert("You have been logged out.");
+        window.location.href = "login.html";
+      });
+    } else {
+      authLinks.innerHTML = `
+        <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+        <li class="nav-item"><a href="signup.html" class="nav-link">Signup</a></li>
+      `;
+    }
+  }
+  updateNavbar();
+</script>
+</body>
+</html>

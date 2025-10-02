@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | Aditya Hospital</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<script>
+  // ✅ Redirect if already logged in
+  const token = localStorage.getItem("token");
+  if (token) {
+    alert("You are already logged in!");
+    window.location.href = "index.html"; 
+  }
+</script>
+
+<header class="header bg-blue">
+  <nav class="navbar bg-blue">
+    <div class="container flex">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/logo.png" alt="site logo">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="text-center py">
+  <h1>Signup</h1>
+  <form id="signupForm" class="bg-white text-dark container" style="max-width:400px; padding:2rem; border-radius:1rem;">
+    <div class="form-element">
+      <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+    </div>
+    <div class="form-element">
+      <input type="email" id="email" class="form-control" placeholder="Email" required>
+    </div>
+    <div class="form-element">
+      <input type="password" id="password" class="form-control" placeholder="Password" required>
+    </div>
+    <button type="submit" class="btn btn-blue">Signup</button>
+  </form>
+</main>
+
+<script>
+  document.getElementById("signupForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (name && email && password) {
+      // ✅ Simulate successful signup
+      localStorage.setItem("token", "dummyToken123");  // Normally returned by backend
+      localStorage.setItem("userName", name);
+
+      alert("Signup successful! Welcome, " + name);
+      window.location.href = "index.html"; // Redirect after signup
+    } else {
+      alert("Please fill all fields.");
+    }
+  });
+</script>
+</body>
+</html>

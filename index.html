@@ -1,343 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Hospital</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- normalize css -->
-    <link rel = "stylesheet" href = "css/normalize.css">
-    <!-- custom css -->
-    <link rel = "stylesheet" href = "css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Hospital</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
 
-    <!-- header -->
-    <header class = "header bg-blue">
-        <nav class = "navbar bg-blue">
-            <div class = "container flex">
-                <a href = "index.html" class = "navbar-brand">
-                    <img src = "images/logo.png" alt = "site logo">
-                </a>
-                <button type = "button" class = "navbar-show-btn">
-                    <img src = "images/ham-menu-icon.png">
-                </button>
+  <!-- header -->
+  <header class="header bg-blue">
+    <nav class="navbar bg-blue">
+      <div class="container flex">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo.png" alt="site logo">
+        </a>
+        <button type="button" class="navbar-show-btn">
+          <img src="images/ham-menu-icon.png" alt="menu">
+        </button>
 
-                <div class = "navbar-collapse bg-white">
-                    <button type = "button" class = "navbar-hide-btn">
-                        <img src = "images/close-icon.png">
-                    </button>
-                    <ul class = "navbar-nav">
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Home</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">About</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Book Appointment</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Doctors</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">My Appointments</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Blog</a>
-                        </li>
-                        <li class = "nav-item">
-                            <a href = "#" class = "nav-link">Contact Us</a>
-                        </li>
-                    </ul>
-                    <div class = "search-bar">
-                        <form>
-                            <div class = "search-bar-box flex">
-                                <span class = "search-icon flex">
-                                    <img src = "images/search-icon-dark.png">
-                                </span>
-                                <input type = "search" class = "search-control" placeholder="Search here">
-                            </div>
-                        </form>
-                    </div>
-                </div> 
-            </div>
-        </nav>
+        <div class="navbar-collapse bg-white">
+          <button type="button" class="navbar-hide-btn">
+            <img src="images/close-icon.png" alt="close">
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="book.html" class="nav-link">Book Appointment</a></li>
+            <li class="nav-item"><a href="#doc-panel" class="nav-link">Doctors</a></li>
+            <li class="nav-item"><a href="appointments.html" class="nav-link">My Appointments</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+          <div class="search-bar">
+            <form>
+              <div class="search-bar-box flex">
+                <span class="search-icon flex">
+                  <img src="images/search-icon-dark.png" alt="search">
+                </span>
+                <input type="search" class="search-control" placeholder="Search here">
+              </div>
+            </form>
+          </div>
+        </div> 
+      </div>
+    </nav>
 
-        <div class = "header-inner text-white text-center">
-            <div class = "container grid">
-                <div class = "header-inner-left">
-                    <h1>Your Most Trusted<br> <span> Health Partner</span></h1>
-                    <p class = "lead">CARE WITH COMPASSION 24*7</p>
-                    <p class = "text text-md">Welcome to Aditya Hospital, where compassionate care meets cutting-edge expertise. Your health and well-being are at the heart of everything we do.</p>
-                    <div class = "btn-group">
-                        <a href = "#" class = "btn btn-white">Learn More</a>
-                        <a href = " http://127.0.0.1:7000" class = "btn btn-light-blue">Sign In</a>
-                    </div>
-                </div>
-                <div class = "header-inner-right">
-                    <img src = "images/header.jpg">
-                </div>
-            </div>
+    <div class="header-inner text-white text-center">
+      <div class="container grid">
+        <div class="header-inner-left">
+          <h1>Your Most Trusted<br> <span> Health Partner</span></h1>
+          <p class="lead">CARE WITH COMPASSION 24*7</p>
+          <p class="text text-md">Welcome to Aditya Hospital, where compassionate care meets cutting-edge expertise. Your health and well-being are at the heart of everything we do.</p>
+          <div class="btn-group">
+            <a href="#about" class="btn btn-white">Learn More</a>
+            <a href="login.html" class="btn btn-light-blue">Sign In</a>
+          </div>
         </div>
-    </header>
-    <!-- end of header -->
-
-    <main>
-        <!-- about section -->
-        <section id = "about" class = "about py">
-            <div class = "about-inner">
-                <div class = "container grid">
-                    <div class = "about-left text-center">
-                        <div class = "section-head">
-                            <h2>About Us</h2>
-                            <div class = "border-line"></div>
-                        </div>
-                        <p class = "text text-lg">    
-                        Welcome to Aditya Hospital, a premier healthcare institution dedicated to providing exceptional medical care with compassion and expertise. Our commitment to excellence has made us a trusted name in the healthcare industry, serving the community with a passion for healing and well-being.
-                        <br>
-                        Mission Statement:
-                        At Aditya Hospital, our mission is to deliver high-quality, patient-centered healthcare services that prioritize the well-being of our community. We strive to exceed the expectations of our patients by combining advanced medical technology with a human touch.
-                        <br>
-                        Our Vision:
-                        To be the leading healthcare provider, recognized for our commitment to medical excellence, compassionate care, and community well-being.
-                        </p>
-                        <a href = "#" class = "btn btn-white">Learn More</a>
-                    </div>
-                    <div class = "">
-                        <div class = "img">
-                            <img src = "images/about-img.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of about section -->
-
-        <!-- banner one -->
-        <section id = "banner-one" class = "banner-one text-center">
-            <div class = "container text-white">
-                <blockquote class = "lead"><i class = "fas fa-quote-left"></i>"Hospitals are not just buildings with walls of bricks and mortar; they are fortresses of healing, where compassion is the mortar, and love is the foundation."
-                <i class = "fas fa-quote-right"></i></blockquote>
-                <small class = "text text-sm">Anonymous</small>
-            </div>
-        </section>
-        <!-- end of banner one -->
-
-        <!-- services section -->
-        <section id = "services" class = "services py">
-            <div class = "container">
-                <div class = "section-head text-center">
-                    <h2 class = "lead">The Best Doctor gives the least medicines</h2>
-                    <p class = "text text-lg">"The best way to find yourself is to lose yourself in the service of others. Hospitals embody this principle every day."
-                    <br>- Mahatma Gandhi</p>
-                    <div class = "line-art flex">
-                        <div></div>
-                        <img src = "images/4-dots.png">
-                        <div></div>
-                    </div>
-                </div>
-                <div class = "services-inner text-center grid">
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-1.png">
-                        </div>
-                        <h3>Cardio Monitoring</h3>
-                        <p class = "text text-sm">
-                            Heart Rate Monitoring:
-                            Heart Rate (HR): The number of heartbeats per minute. Normal resting heart rate for adults is typically between 60 and 100 beats per minute.
-                           <br> Blood Pressure Monitoring:
-                            Blood Pressure (BP): The force of blood against the walls of the arteries. It is measured in millimeters of mercury (mmHg) and consists of two values - systolic (pressure during heartbeats) and diastolic (pressure between heartbeats).
-                            Electrocardiogram (ECG or EKG):<br>
-                            ECG: A test that records the electrical activity of the heart over a period of time. It is commonly used to diagnose heart conditions, such as arrhythmias and heart attacks.
-                        </p>
-                    </article>
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-2.png">
-                        </div>
-                        <h3>Medical Treatment</h3>
-                        <p class = "text text-sm">Medical treatment refers to the use of medical interventions to address or manage a health condition, illness, or injury. It encompasses a wide range of approaches, including medications, surgical procedures, physical therapies, lifestyle modifications, and other interventions aimed at restoring or improving a person's health.</p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-3.png">
-                        </div>
-                        <h3>Emergency Help</h3>
-                        <p class = "text text-sm"></p>
-                    </article>
-
-                    <article class = "service-item">
-                        <div class = "icon">
-                            <img src = "images/service-icon-4.png">
-                        </div>
-                        <h3>First Aid</h3>
-                        <p class = "text text-sm"></p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of services section -->
-
-        <!-- banner two section -->
-        <section id = "banner-two" class = "banner-two text-center">
-            <div class = "container grid">
-                <div class = "banner-two-left">
-                    <img src = "images/header.jpg">
-                </div>
-                <div class = "banner-two-right">
-                    <p class = "lead text-white">Hospitals play a crucial role in maintaining community health by providing essential medical services and emergency care. Serving as primary centers for diagnosis, treatment, and rehabilitation, hospitals offer a comprehensive range of medical expertise and advanced technologies.Hospitals also serve as hubs for medical research, training healthcare professionals, and disseminating public health information. In essence, the importance of hospitals lies in their integral contribution to promoting overall well-being and addressing the diverse healthcare needs of populations.</p>
-                    <div class = "btn-group">
-                        <a href = "#" class = "btn btn-white">Learn More</a>
-                        <a href = " http://127.0.0.1:7000" class = "btn btn-light-blue">Sign In</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of banner two section -->
-
-        <!-- doctors section -->
-        <section id = "doc-panel" class = "doc-panel py">
-            <div class = "container">
-                <div class = "section-head">
-                    <h2>Our Doctor Panel</h2>
-                </div>
-
-                <div class = "doc-panel-inner grid">
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/doc-1.jpg" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr Kohli</p>
-                                <p class = "text-lg">Pediatrician</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/doc-2.png" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr Nancy</p>
-                                <p class = "text-lg">Cardiology</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "doc-panel-item">
-                        <div class = "img flex">
-                            <img src = "images/doc-3.png" alt = "doctor image">
-                            <div class = "info text-center bg-blue text-white flex">
-                                <p class = "lead">Dr Tanya</p>
-                                <p class = "text-lg">Medicine</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of doctors section -->
-        <!-- contact section -->
-        <section id = "contact" class = "contact py">
-            <div class = "container grid">
-                <div class = "contact-right text-white text-center bg-blue">
-                    <div class = "contact-head">
-                        <h3 class = "lead">Contact Us</h3>
-                        <p class = "text text-md">Write to us for feedback , complaints.</p>
-                    </div>
-                    <form>
-                        <div class = "form-element">
-                            <input type = "text" class = "form-control" placeholder="Your Name">
-                        </div>
-                        <div class = "form-element">
-                            <input type = "email" class = "form-control" placeholder="Your Email">
-                        </div>
-                        <div class = "form-element">
-                            <textarea rows = "5" placeholder="Your Message" class = "form-control"></textarea>
-                        </div>
-                        <button type = "submit" class = "btn btn-white btn-submit">
-                            <i class = "fas fa-arrow-right"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- end of contact section -->
-    </main>
-
-    <!-- footer  -->
-    <footer id = "footer" class = "footer text-center">
-        <div class = "container">
-            <div class = "footer-inner text-white py grid">
-                <div class = "footer-item">
-                    <h3 class = "footer-head">about us</h3>
-                    <div class = "icon">
-                        <img src = "images/logo.png">
-                    </div>
-                    <p class = "text text-md"></p>
-                    <address>
-                        Aditya Hospital<br>
-                        B-100,Beta 1 <br>
-                        Greater Noida, U.P <br>
-                        India
-                    </address>
-                </div>
-
-                <div class = "footer-item">
-                    <h3 class = "footer-head">tags</h3>
-                    <ul class = "tags-list flex">
-                        <li>medical care</li>
-                        <li>emergency</li>
-                        <li>therapy</li>
-                        <li>surgery</li>
-                        <li>medication</li>
-                        <li>nurse</li>
-                    </ul>
-                </div>
-
-                <div class = "footer-item">
-                    <h3 class = "footer-head">Quick Links</h3>
-                    <ul>
-                        <li><a href = "#" class = "text-white">Our Services</a></li>
-                        <li><a href = "#" class = "text-white">Our Plan</a></li>
-                        <li><a href = "#" class = "text-white">Privacy Policy</a></li>
-                        <li><a href = "#" class = "text-white">Appointment Schedule</a></li>
-                    </ul>
-                </div>
-
-                <div class = "footer-item">
-                    <h3 class = "footer-head">Book an Appointment</h3>
-                    <p class = "text text-md">Emergency Service Available 24*7.</p>
-                    <ul class = "appointment-info">
-                        <li>8:00 AM - 11:00 AM</li>
-                        <li>1:00 PM - 05:00 PM</li>
-                        <li>7:00 PM - 12:00 AM</li>
-                        <li>
-                            <i class = "fas fa-envelope"></i>
-                            <span>adihospital@mail.com</span>
-                        </li>
-                        <li>
-                            <i class = "fas fa-phone"></i>
-                            <span>+91 97855 28340(12)</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class = "footer-links">
-                <ul class = "flex">
-                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
-                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
-                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
+        <div class="header-inner-right">
+          <img src="images/header.jpg" alt="hospital">
         </div>
-    </footer>
-    <!-- end of footer  -->
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <main>
+    <!-- about section -->
+    <section id="about" class="about py">
+      <div class="about-inner">
+        <div class="container grid">
+          <div class="about-left text-center">
+            <div class="section-head">
+              <h2>About Us</h2>
+              <div class="border-line"></div>
+            </div>
+            <p class="text text-lg">    
+              Welcome to Aditya Hospital, a premier healthcare institution dedicated to providing exceptional medical care with compassion and expertise. 
+              <br><br>
+              <b>Mission:</b> Deliver high-quality, patient-centered healthcare services that prioritize community well-being.  
+              <br><br>
+              <b>Vision:</b> To be the leading healthcare provider, recognized for excellence, compassion, and community care.
+            </p>
+            <a href="#services" class="btn btn-white">Learn More</a>
+          </div>
+          <div class="">
+            <div class="img">
+              <img src="images/about-img.jpg" alt="about">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- banner one -->
+    <section id="banner-one" class="banner-one text-center">
+      <div class="container text-white">
+        <blockquote class="lead"><i class="fas fa-quote-left"></i>
+          "Hospitals are not just buildings with walls of bricks and mortar; they are fortresses of healing, where compassion is the mortar, and love is the foundation."
+          <i class="fas fa-quote-right"></i>
+        </blockquote>
+        <small class="text text-sm">Anonymous</small>
+      </div>
+    </section>
+    <!-- end of banner one -->
+
+    <!-- services section -->
+    <section id="services" class="services py">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="lead">The Best Doctor gives the least medicines</h2>
+          <p class="text text-lg">
+            "The best way to find yourself is to lose yourself in the service of others. Hospitals embody this principle every day."
+            <br>- Mahatma Gandhi
+          </p>
+          <div class="line-art flex">
+            <div></div>
+            <img src="images/4-dots.png" alt="dots">
+            <div></div>
+          </div>
+        </div>
+        <div class="services-inner text-center grid">
+          <article class="service-item">
+            <div class="icon"><img src="images/service-icon-1.png" alt="cardio"></div>
+            <h3>Cardio Monitoring</h3>
+            <p class="text text-sm">
+              Heart Rate Monitoring (60–100 bpm), Blood Pressure, ECG tests to diagnose conditions such as arrhythmias and heart attacks.
+            </p>
+          </article>
+          <article class="service-item">
+            <div class="icon"><img src="images/service-icon-2.png" alt="treatment"></div>
+            <h3>Medical Treatment</h3>
+            <p class="text text-sm">Comprehensive medical interventions, from medication to surgery, aimed at restoring and improving health.</p>
+          </article>
+          <article class="service-item">
+            <div class="icon"><img src="images/service-icon-3.png" alt="emergency"></div>
+            <h3>Emergency Help</h3>
+            <p class="text text-sm">24/7 emergency care with advanced trauma and critical support systems for urgent medical needs.</p>
+          </article>
+          <article class="service-item">
+            <div class="icon"><img src="images/service-icon-4.png" alt="first aid"></div>
+            <h3>First Aid</h3>
+            <p class="text text-sm">Immediate medical assistance for injuries and health issues, stabilizing patients until further treatment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- end of services section -->
+
+    <!-- banner two -->
+    <section id="banner-two" class="banner-two text-center">
+      <div class="container grid">
+        <div class="banner-two-left">
+          <img src="images/header.jpg" alt="banner">
+        </div>
+        <div class="banner-two-right">
+          <p class="lead text-white">Hospitals play a crucial role in maintaining community health by providing essential medical services and emergency care...</p>
+          <div class="btn-group">
+            <a href="#services" class="btn btn-white">Learn More</a>
+            <a href="signup.html" class="btn btn-light-blue">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of banner two -->
+
+    <!-- doctors section -->
+    <section id="doc-panel" class="doc-panel py">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Doctor Panel</h2>
+        </div>
+        <div class="doc-panel-inner grid">
+          <div class="doc-panel-item">
+            <div class="img flex">
+              <img src="images/doc-1.jpg" alt="doctor">
+              <div class="info text-center bg-blue text-white flex">
+                <p class="lead">Dr Kohli</p>
+                <p class="text-lg">Pediatrician</p>
+              </div>
+            </div>
+          </div>
+          <div class="doc-panel-item">
+            <div class="img flex">
+              <img src="images/doc-2.png" alt="doctor">
+              <div class="info text-center bg-blue text-white flex">
+                <p class="lead">Dr Nancy</p>
+                <p class="text-lg">Cardiology</p>
+              </div>
+            </div>
+          </div>
+          <div class="doc-panel-item">
+            <div class="img flex">
+              <img src="images/doc-3.png" alt="doctor">
+              <div class="info text-center bg-blue text-white flex">
+                <p class="lead">Dr Tanya</p>
+                <p class="text-lg">Medicine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of doctors section -->
+
+    <!-- contact section -->
+    <section id="contact" class="contact py">
+      <div class="container grid">
+        <div class="contact-right text-white text-center bg-blue">
+          <div class="contact-head">
+            <h3 class="lead">Contact Us</h3>
+            <p class="text text-md">Write to us for feedback or complaints.</p>
+          </div>
+          <form id="contactForm" method="POST" action="/api/contact">
+            <div class="form-element">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-element">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-element">
+              <textarea rows="5" name="message" placeholder="Your Message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-white btn-submit">
+              <i class="fas fa-arrow-right"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+  </main>
+  <script>
+    function updateNavbar() {
+      const authLinks = document.getElementById("authLinks");
+      const token = localStorage.getItem("token");
+      const name = localStorage.getItem("userName");
+
+      if (token && name) {
+        authLinks.innerHTML = `
+          <li class="nav-item"><span class="nav-link">Hi, ${name}</span></li>
+          <li class="nav-item"><a href="appointments.html" class="nav-link">My Appointments</a></li>
+          <li class="nav-item"><a href="#" id="logoutBtn" class="nav-link">Logout</a></li>
+        `;
+        document.getElementById("logoutBtn").addEventListener("click", (e) => {
+          e.preventDefault();
+          localStorage.removeItem("token");
+          localStorage.removeItem("userName");
+          alert("You have been logged out.");
+          window.location.href = "login.html";
+        });
+      } else {
+        authLinks.innerHTML = `
+          <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="signup.html" class="nav-link">Signup</a></li>
+        `;
+      }
+    }
+    updateNavbar();
+  </script>
+
+  <!-- footer -->
+  <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="footer-inner text-white py grid">
+        <div class="footer-item">
+          <h3 class="footer-head">about us</h3>
+          <div class="icon"><img src="images/logo.png" alt="logo"></div>
+          <address>
+            Aditya Hospital<br>
+            B-100,Beta 1 <br>
+            Greater Noida, U.P <br>
+            India
+          </address>
+        </div>
+        <div class="footer-item">
+          <h3 class="footer-head">tags</h3>
+          <ul class="tags-list flex">
+            <li>medical care</li>
+            <li>emergency</li>
+            <li>therapy</li>
+            <li>surgery</li>
+            <li>medication</li>
+            <li>nurse</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3 class="footer-head">Quick Links</h3>
+          <ul>
+            <li><a href="book.html" class="text-white">Our Services</a></li>
+            <li><a href="appointments.html" class="text-white">Our Plan</a></li>
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="book.html" class="text-white">Appointment Schedule</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3 class="footer-head">Book an Appointment</h3>
+          <p class="text text-md">Emergency Service Available 24*7.</p>
+          <ul class="appointment-info">
+            <li>8:00 AM - 11:00 AM</li>
+            <li>1:00 PM - 05:00 PM</li>
+            <li>7:00 PM - 12:00 AM</li>
+            <li><i class="fas fa-envelope"></i><span>adihospital@mail.com</span></li>
+            <li><i class="fas fa-phone"></i><span>+91 97855 28340(12)</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-links">
+        <ul class="flex">
+          <li><a href="#" class="text-white flex"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="text-white flex"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="text-white flex"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
 
 </body>
 </html>
